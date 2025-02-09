@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel=icon type="image/png" href="/assets/youtube video downloader- - Premium Logo by Blend.png">
+     <link rel="stylesheet" href="/src/output.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="absolute top-5 right-5">
+        <button id="darkModeBtn" onclick="toggleDarkMode()" class="bg-gray-700 p-2 rounded text-white">Light</button>
+    </div>
+
+    <h1 class="text-3xl font-bold mb-6">YouTube Video Downloader</h1>
+
+    <div class="w-full max-w-md bg-gray-800 p-6 rounded-lg shadow-lg">
+        <input id="videoUrl" class="w-full p-2 rounded bg-gray-700 text-white" type="text" placeholder="Enter YouTube URL">
+
+        <select id="format" class="w-full mt-3 p-2 bg-gray-700 text-white rounded">
+            <option value="mp4">Video (MP4)</option>
+            <option value="mp3">Audio (MP3)</option>
+        </select>
+
+        <button onclick="fetchVideo()" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded">Download</button>
+    </div>
+
+    <div id="results" class="mt-6"></div>
+
+    <script src="/app/script.js"></script>
+
+    <footer class=" container flex items-center justify-center mt-96">
+        <p>Created by <a href="https://github.com/aglcode">Gelo
+    </footer>
+</body>
+</html>
